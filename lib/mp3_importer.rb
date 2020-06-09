@@ -16,8 +16,7 @@ attr_accessor :path
     end
 
     def import
-        new_songs= files.map{|file| file.gsub('.mp3', '')}.map{|each| each.split(' - ').map{|each|each.strip }}
-        puts new_songs
+        new_songs= files.map{|file| file.gsub('.mp3', '')}
         new_songs.each{|song| Song.new_by_filename(song)}
     end
 
