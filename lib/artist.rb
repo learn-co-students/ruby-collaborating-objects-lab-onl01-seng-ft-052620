@@ -28,4 +28,8 @@ def print_songs
     songs.each {|song| puts "#{song.name}"}
 end
 
+def artist_name=(name)
+    
+end
+
 end
